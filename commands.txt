@@ -1,0 +1,17 @@
+yo aspnet
+
+echo #AspCoreWebApp_Security_ExternalProvidersAuthentication >> README.md
+git init
+git add README.md
+git commit -m "Iinitial Commit"
+git remote add origin https://github.com/Apollo013/AspCoreWebApp_Security_ExternalProvidersAuthentication.git
+git push -u origin master
+
+
+dotnet restore
+dotnet build (optional, build will also happen when it's run)
+dotnet run
+
+dotnet ef migrations add InitialCreate
+dotnet ef migrations remove
+dotnet ef database update
